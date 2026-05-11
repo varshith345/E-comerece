@@ -15,6 +15,7 @@ export const RelatedProducts = ({ products }: RelatedProductsProps): ReactElemen
       <SectionHeader
         index="↳ Related"
         kicker="Same shelf"
+        titleId="related-heading"
         title={<><em>Pairs well</em> with the catalog.</>}
         description="Hand-picked companions from the same family — chosen because they sound, feel, or work better together."
       />

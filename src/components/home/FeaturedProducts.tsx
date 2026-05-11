@@ -17,6 +17,7 @@ export const FeaturedProducts = ({ products }: FeaturedProductsProps): ReactElem
     <SectionHeader
       index="02"
       kicker="Featured / Editor's selection"
+      titleId="featured-heading"
       title={
         <>
           A small <em>library</em> of objects
@@ -33,9 +34,6 @@ export const FeaturedProducts = ({ products }: FeaturedProductsProps): ReactElem
         </Link>
       }
     />
-    <h2 id="featured-heading" className="sr-only">
-      Featured products
-    </h2>
 
     <ul className="mt-20 grid grid-cols-1 gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
       {products.map((p, i) => (

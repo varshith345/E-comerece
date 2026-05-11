@@ -40,9 +40,9 @@ export const CartView = (): ReactElement => {
     <div className="grid gap-12 lg:grid-cols-12">
       <div className="lg:col-span-8">
         <p className="label-mono">↳ {String(lines.length).padStart(2, "0")} lines</p>
-        <h1 className="display-italic mt-3 text-balance text-5xl leading-[0.95] sm:text-6xl">
+        <h2 className="display-italic mt-3 text-balance text-5xl leading-[0.95] sm:text-6xl">
           <em>Bag</em> &mdash; awaiting checkout.
-        </h1>
+        </h2>
         <ul className="mt-12 flex flex-col">
           {lines.map((line, i) => (
             <CartItem

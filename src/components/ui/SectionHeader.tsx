@@ -5,6 +5,7 @@ interface SectionHeaderProps {
   readonly index: string;
   readonly kicker: string;
   readonly title: ReactNode;
+  readonly titleId?: string;
   readonly description?: ReactNode;
   readonly aside?: ReactNode;
   readonly className?: string;
@@ -14,6 +15,7 @@ export const SectionHeader = ({
   index,
   kicker,
   title,
+  titleId,
   description,
   aside,
   className,
@@ -24,7 +26,10 @@ export const SectionHeader = ({
     </div>
     <div className="md:col-span-7">
       <p className="label-mono">{kicker}</p>
-      <h2 className="display-italic mt-3 text-balance text-4xl leading-[0.95] sm:text-5xl md:text-6xl">
+      <h2
+        {...(titleId ? { id: titleId } : {})}
+        className="display-italic mt-3 text-balance text-4xl leading-[0.95] sm:text-5xl md:text-6xl"
+      >
         {title}
       </h2>
     </div>

@@ -8,6 +8,29 @@ This is a portfolio / showcase project. Cart and auth are local-only (localStora
 
 ---
 
+## PRD compliance
+
+| PRD requirement                              | Where it lives                                                                                       |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Next.js + TypeScript                         | App Router under `src/app/`, strict `tsconfig.json` with `noUncheckedIndexedAccess` etc.             |
+| Home page (hero + featured products)         | `src/app/page.tsx` → `Hero`, `Marquee`, `FeaturedProducts`, `WhyChooseUs`, `CTA`                     |
+| Product listing (list + search/filter)       | `src/app/products/page.tsx` → `ProductListing` (debounced search, category, price ceiling, sort)     |
+| Product detail (image, description, price)   | `src/app/products/[id]/page.tsx` → `ProductDetailView` (SSG, JSON-LD, related products)              |
+| Cart                                         | `src/app/cart/page.tsx` → `CartView` (quantity, totals, free-shipping threshold, persistent)         |
+| Login + guest user                           | `src/app/login/page.tsx` (mock auth) + `AuthContext`. Guests browse & add to cart; checkout requires sign-in |
+| About / Contact                              | `src/app/about/page.tsx` (timeline) + `src/app/contact/page.tsx` (typed validated form)              |
+| Clean UI (Tailwind)                          | Tailwind 3.4 + a custom token system (CSS variables → theme-aware tokens)                            |
+| Reusable components                          | `Button`, `Input`, `Modal`, `Badge`, `Rating`, `EmptyState`, `SectionHeader`, `ThemeToggle`          |
+| Responsive design                            | Mobile-first layouts on every page with a custom mobile drawer                                       |
+| Static JSON data (no API)                    | `src/data/products.json` (single source of truth, 12 products / 5 categories)                        |
+| **SEO — page title**                         | Per-page `metadata.title` via Next.js Metadata API; root template `%s · Voltage Collective`          |
+| **SEO — meta description**                   | Per-page `metadata.description` on every route                                                       |
+| **SEO — proper headings**                    | One `<h1>` per page (incl. empty cart & 404 pages), `<h2>` for section titles via `SectionHeader`, no duplicate or broken aria references |
+| SEO — bonus (sitemap, robots, OG, JSON-LD)   | `src/app/sitemap.ts`, `src/app/robots.ts`, dynamic `src/app/opengraph-image.tsx`, JSON-LD `Product` on detail pages |
+| Performance                                  | `next/image` w/ `sizes`, `next/font`, SSG for all 12 product pages, RSC-by-default, ~100 kB shared JS |
+
+---
+
 ## Tech stack
 
 | Layer        | Choice                                                   |

@@ -35,6 +35,7 @@ export const WhyChooseUs = (): ReactElement => (
     <SectionHeader
       index="03"
       kicker="Why us"
+      titleId="why-heading"
       title={
         <>
           A studio, not a <em>storefront</em>.
@@ -42,9 +43,6 @@ export const WhyChooseUs = (): ReactElement => (
       }
       description="Voltage Collective is run by three people, in one room, with one rule — nothing on the site we wouldn't put on our own desks. Here is what that means in practice."
     />
-    <h2 id="why-heading" className="sr-only">
-      Why choose us
-    </h2>
 
     <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden bg-hairline md:grid-cols-2">
       {REASONS.map((reason) => (

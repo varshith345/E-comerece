@@ -10,8 +10,11 @@ export const metadata: Metadata = {
 };
 
 const CartPage = (): JSX.Element => (
-  <section className="shell pb-24 pt-16 sm:pt-24">
+  <section className="shell pb-24 pt-16 sm:pt-24" aria-labelledby="cart-heading">
     <p className="label-mono">↳ checkout · step 01 / 02</p>
+    <h1 id="cart-heading" className="sr-only">
+      Your cart
+    </h1>
     <div className="rule-h my-8" />
     <CartView />
   </section>
