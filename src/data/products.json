@@ -1,0 +1,338 @@
+[
+  {
+    "id": "VC-001",
+    "slug": "VC-001",
+    "title": "Nocturne Wireless Headphones",
+    "tagline": "Closed-back over-ear with adaptive ANC.",
+    "description": "Engineered for long sessions and longer flights. Custom 42mm beryllium drivers, three-zone adaptive noise cancellation, and a magnesium-aluminum frame that weighs less than a paperback. Battery: 60 hours. Charge: 8 minutes for a day.",
+    "price": 389,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Matte black over-ear headphones photographed on a neutral surface.",
+    "category": "audio",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 1284,
+    "stock": 42,
+    "highlights": [
+      "Adaptive three-zone ANC",
+      "60-hour battery, 8-minute fast charge",
+      "Custom 42mm beryllium drivers",
+      "Spatial audio with head-tracking"
+    ],
+    "specs": [
+      { "label": "Driver", "value": "42mm beryllium" },
+      { "label": "Battery", "value": "60 hours" },
+      { "label": "Weight", "value": "248 g" },
+      { "label": "Codec", "value": "LDAC / aptX Lossless" }
+    ]
+  },
+  {
+    "id": "VC-002",
+    "slug": "VC-002",
+    "title": "Index Mechanical Keyboard",
+    "tagline": "Tactile 75% layout, hot-swap, gasket-mounted.",
+    "description": "An obsessively tuned typing instrument. CNC aluminum body, foam-dampened PCB, and pre-lubed linear switches that whisper rather than clack. PBT double-shot keycaps, screwed-in stabilizers, and per-key RGB underneath. Connect over USB-C, 2.4 GHz, or Bluetooth.",
+    "price": 219,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Aluminum mechanical keyboard with cream and orange keycaps.",
+    "category": "peripherals",
+    "featured": true,
+    "rating": 4.9,
+    "reviewCount": 962,
+    "stock": 28,
+    "highlights": [
+      "75% gasket-mounted layout",
+      "Hot-swap south-facing sockets",
+      "PBT double-shot keycaps",
+      "Tri-mode: USB-C / 2.4 GHz / Bluetooth"
+    ],
+    "specs": [
+      { "label": "Layout", "value": "75% ANSI" },
+      { "label": "Switch", "value": "Linear, pre-lubed" },
+      { "label": "Body", "value": "CNC aluminum" },
+      { "label": "Battery", "value": "4000 mAh" }
+    ]
+  },
+  {
+    "id": "VC-003",
+    "slug": "VC-003",
+    "title": "Pulse Smart Watch",
+    "tagline": "Titanium case, sapphire crystal, week-long battery.",
+    "description": "Health-first design without the screen-addiction. AMOLED with always-on optical sensors, ECG, SpO2, and a barometric altimeter. Pairs to iOS and Android equally well. Lasts seven days. Refuses to interrupt you.",
+    "price": 549,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Titanium smartwatch with a black sport band.",
+    "category": "wearables",
+    "featured": true,
+    "rating": 4.7,
+    "reviewCount": 1820,
+    "stock": 64,
+    "highlights": [
+      "Grade-5 titanium case",
+      "Sapphire crystal display",
+      "7-day battery in always-on mode",
+      "ECG + SpO2 + barometric altimeter"
+    ],
+    "specs": [
+      { "label": "Case", "value": "Titanium, 42mm" },
+      { "label": "Display", "value": "AMOLED, 1000 nits" },
+      { "label": "Battery", "value": "Up to 7 days" },
+      { "label": "Water", "value": "10 ATM" }
+    ]
+  },
+  {
+    "id": "VC-004",
+    "slug": "VC-004",
+    "title": "Trace Gaming Mouse",
+    "tagline": "26K DPI optical, 4 kHz polling, 58 grams.",
+    "description": "A surgical instrument for first-person shooters and CAD operators alike. Symmetrical magnesium shell, optical micro-switches rated to 100M clicks, and a paracord-thin cable that gets out of the way. Or use it wireless at 4 kHz.",
+    "price": 149,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Minimal white gaming mouse on a desk.",
+    "category": "peripherals",
+    "featured": false,
+    "rating": 4.6,
+    "reviewCount": 712,
+    "stock": 105,
+    "highlights": [
+      "26 000 DPI optical sensor",
+      "4 kHz wireless polling",
+      "58 g magnesium shell",
+      "Optical switches, 100M-click rated"
+    ],
+    "specs": [
+      { "label": "Sensor", "value": "PixArt 3950" },
+      { "label": "Weight", "value": "58 g" },
+      { "label": "Battery", "value": "70 hours" },
+      { "label": "Polling", "value": "Up to 4 kHz" }
+    ]
+  },
+  {
+    "id": "VC-005",
+    "slug": "VC-005",
+    "title": "Hum Bluetooth Speaker",
+    "tagline": "Portable, lossless, and absurdly loud.",
+    "description": "A pocket-sized concert. Dual passive radiators, beam-formed tweeters, and a sealed aluminum chassis that handles a thunderstorm. 24 hours of battery and a USB-C port that can charge your phone in a pinch.",
+    "price": 179,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Cylindrical portable Bluetooth speaker.",
+    "category": "audio",
+    "featured": false,
+    "rating": 4.5,
+    "reviewCount": 540,
+    "stock": 77,
+    "highlights": [
+      "Dual passive radiators",
+      "IP67 dust + water rating",
+      "24-hour battery",
+      "USB-C reverse charging"
+    ],
+    "specs": [
+      { "label": "Output", "value": "40 W RMS" },
+      { "label": "Battery", "value": "24 hours" },
+      { "label": "Rating", "value": "IP67" },
+      { "label": "Codec", "value": "LDAC" }
+    ]
+  },
+  {
+    "id": "VC-006",
+    "slug": "VC-006",
+    "title": "Field 32 4K Monitor",
+    "tagline": "32-inch IPS Black, factory color-calibrated.",
+    "description": "A pane of glass for people who care about light. 1.07 billion colors, Delta-E under 2 out of the box, and a USB-C input that delivers 90W of power back to your laptop. KVM built-in. Hood included.",
+    "price": 899,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Black widescreen 4K monitor on a minimalist desk.",
+    "category": "displays",
+    "featured": true,
+    "rating": 4.8,
+    "reviewCount": 318,
+    "stock": 14,
+    "highlights": [
+      "32-inch 4K IPS Black panel",
+      "Factory Delta-E < 2 calibration",
+      "USB-C 90W power delivery",
+      "Built-in KVM and USB hub"
+    ],
+    "specs": [
+      { "label": "Panel", "value": "IPS Black, 32\"" },
+      { "label": "Resolution", "value": "3840 × 2160" },
+      { "label": "Refresh", "value": "144 Hz" },
+      { "label": "Inputs", "value": "USB-C / HDMI 2.1 / DP 1.4" }
+    ]
+  },
+  {
+    "id": "VC-007",
+    "slug": "VC-007",
+    "title": "Arc Laptop Stand",
+    "tagline": "Anodized aluminum, weighted base, eye-level.",
+    "description": "A monolithic curve milled from a single billet of aluminum. Cools your laptop passively, lifts it to the right height, and looks unfairly good on any desk it lives on. No assembly. No plastic.",
+    "price": 89,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Curved aluminum laptop stand holding a silver laptop.",
+    "category": "accessories",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 482,
+    "stock": 220,
+    "highlights": [
+      "CNC-milled from one billet",
+      "Passive airflow design",
+      "Eye-level ergonomic height",
+      "Silicone cradle, non-slip base"
+    ],
+    "specs": [
+      { "label": "Material", "value": "6063 aluminum" },
+      { "label": "Weight", "value": "1.4 kg" },
+      { "label": "Fit", "value": "11\" – 17\" laptops" },
+      { "label": "Finish", "value": "Bead-blasted, anodized" }
+    ]
+  },
+  {
+    "id": "VC-008",
+    "slug": "VC-008",
+    "title": "Junction USB-C Hub",
+    "tagline": "Ten ports, single cable, fanless aluminum.",
+    "description": "A discreet aluminum slab that turns one USB-C port into ten. 8K HDMI, dual 4K DisplayPort, 100W passthrough, gigabit Ethernet, SD/microSD, and three USB-A jacks for the dongles you forgot you needed.",
+    "price": 129,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Slim aluminum USB-C hub with multiple ports.",
+    "category": "accessories",
+    "featured": false,
+    "rating": 4.6,
+    "reviewCount": 256,
+    "stock": 130,
+    "highlights": [
+      "10-in-1 with 100W passthrough",
+      "8K HDMI / 2× 4K DisplayPort",
+      "Gigabit Ethernet",
+      "Fanless aluminum body"
+    ],
+    "specs": [
+      { "label": "Ports", "value": "10 total" },
+      { "label": "Power", "value": "100 W PD passthrough" },
+      { "label": "Video", "value": "8K @ 60 Hz" },
+      { "label": "Ethernet", "value": "1 Gbps" }
+    ]
+  },
+  {
+    "id": "VC-009",
+    "slug": "VC-009",
+    "title": "Echo Wireless Earbuds",
+    "tagline": "Closed-fit ANC with class-leading mic clarity.",
+    "description": "True-wireless that disappears in your ear and lasts the whole flight. Beam-forming mics for calls, transparency that sounds like nothing, and a charging case the size of a stack of business cards.",
+    "price": 199,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Small charging case with wireless earbuds beside it.",
+    "category": "audio",
+    "featured": false,
+    "rating": 4.5,
+    "reviewCount": 1102,
+    "stock": 88,
+    "highlights": [
+      "Adaptive ANC with transparency",
+      "Six beam-forming mics",
+      "32-hour total runtime",
+      "Wireless Qi charging case"
+    ],
+    "specs": [
+      { "label": "Driver", "value": "11mm dynamic" },
+      { "label": "Battery", "value": "8h + 24h case" },
+      { "label": "Codec", "value": "LC3 / aptX Adaptive" },
+      { "label": "Rating", "value": "IPX5" }
+    ]
+  },
+  {
+    "id": "VC-010",
+    "slug": "VC-010",
+    "title": "Frame 4K Webcam",
+    "tagline": "Glass optics, machine-vision sensor, magnetic mount.",
+    "description": "A webcam that respects your face. Sony STARVIS sensor for low light, AI auto-framing that isn't dizzying, and a privacy shutter you can flip with your thumb. USB-C, plug-and-play, no driver.",
+    "price": 159,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Compact black 4K webcam mounted on a monitor edge.",
+    "category": "peripherals",
+    "featured": false,
+    "rating": 4.4,
+    "reviewCount": 198,
+    "stock": 60,
+    "highlights": [
+      "Sony STARVIS low-light sensor",
+      "AI auto-framing",
+      "Hardware privacy shutter",
+      "Magnetic monitor mount"
+    ],
+    "specs": [
+      { "label": "Sensor", "value": "Sony STARVIS, 1/1.8\"" },
+      { "label": "Resolution", "value": "4K @ 30 fps" },
+      { "label": "Lens", "value": "Glass, f/1.8" },
+      { "label": "Connector", "value": "USB-C" }
+    ]
+  },
+  {
+    "id": "VC-011",
+    "slug": "VC-011",
+    "title": "Vault 2 TB External SSD",
+    "tagline": "USB4, 3.8 GB/s sustained, drop-proof.",
+    "description": "Two terabytes of storage in the size of a credit card. USB4 throughput sustained for hours, AES-256 hardware encryption, and a rubberized aluminum shell that survives the bottom of a backpack.",
+    "price": 269,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1591488320451-e6a5d4dee0e5?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Compact external SSD on a wood surface.",
+    "category": "accessories",
+    "featured": false,
+    "rating": 4.7,
+    "reviewCount": 410,
+    "stock": 36,
+    "highlights": [
+      "USB4, 3.8 GB/s sustained",
+      "Hardware AES-256 encryption",
+      "Drop-tested to 3 m",
+      "Bus-powered, no brick"
+    ],
+    "specs": [
+      { "label": "Capacity", "value": "2 TB" },
+      { "label": "Interface", "value": "USB4 / Thunderbolt 4" },
+      { "label": "Speed", "value": "3800 MB/s read" },
+      { "label": "Shell", "value": "Aluminum + silicone" }
+    ]
+  },
+  {
+    "id": "VC-012",
+    "slug": "VC-012",
+    "title": "Lumen Desk Lamp",
+    "tagline": "Tunable white, gesture dim, no flicker.",
+    "description": "A slender column of light that knows when you're at your desk. Continuous spectrum LED, 2700K to 6500K, and a touch slider that ramps from candlelight to surgical without a single perceptible step.",
+    "price": 169,
+    "currency": "USD",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Slim minimalist desk lamp with a circular base.",
+    "category": "accessories",
+    "featured": false,
+    "rating": 4.6,
+    "reviewCount": 167,
+    "stock": 52,
+    "highlights": [
+      "Continuous spectrum LED",
+      "Tunable 2700K – 6500K",
+      "Zero perceptible flicker",
+      "Capacitive gesture controls"
+    ],
+    "specs": [
+      { "label": "Output", "value": "1200 lumen" },
+      { "label": "CRI", "value": "Ra 97" },
+      { "label": "Temperature", "value": "2700 – 6500 K" },
+      { "label": "Power", "value": "15 W" }
+    ]
+  }
+]
