@@ -2,15 +2,16 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: ["./src/**/*.{ts,tsx}"],
+  darkMode: ["variant", '[data-theme="dark"] &'],
   theme: {
     extend: {
       colors: {
-        bone: "#F2EDE3",
-        "bone-2": "#EAE3D4",
-        ink: "#111111",
-        "ink-2": "#1C1B18",
-        muted: "#6B6A63",
-        hairline: "rgba(17,17,17,0.12)",
+        bone: "rgb(var(--bone) / <alpha-value>)",
+        "bone-2": "rgb(var(--bone-2) / <alpha-value>)",
+        ink: "rgb(var(--ink) / <alpha-value>)",
+        "ink-2": "rgb(var(--ink-2) / <alpha-value>)",
+        muted: "rgb(var(--muted) / <alpha-value>)",
+        hairline: "rgb(var(--hairline-rgb) / var(--hairline-alpha))",
         signal: "#FF3D00",
         "signal-2": "#FF6A33",
       },
@@ -39,11 +40,16 @@ const config: Config = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        ledPulse: {
+          "0%, 100%": { opacity: "1", boxShadow: "0 0 0 0 rgba(255,61,0,0.55)" },
+          "50%": { opacity: "0.85", boxShadow: "0 0 0 3px rgba(255,61,0,0)" },
+        },
       },
       animation: {
         "rise-in": "riseIn 0.8s cubic-bezier(0.22,1,0.36,1) both",
         "fade-in": "fadeIn 0.6s ease-out both",
         marquee: "marquee 40s linear infinite",
+        "led-pulse": "ledPulse 2.4s ease-in-out infinite",
       },
     },
   },

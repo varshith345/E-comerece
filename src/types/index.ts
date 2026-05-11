@@ -7,3 +7,4 @@ export type {
   ResolvedCartLine,
 } from "@/types/cart";
 export type { AuthUser, AuthState, AuthStatus, LoginInput } from "@/types/auth";
+export type { ThemeMode, ResolvedTheme, ThemeOption } from "@/types/theme";

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type ReactElement } from "react";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { ROUTES } from "@/constants/routes";
 import { SITE } from "@/constants/site";
 import { useAuth } from "@/context/AuthContext";
@@ -57,6 +58,7 @@ export const Navbar = (): ReactElement => {
         </nav>
 
         <div className="flex items-center gap-5">
+          <ThemeToggle className="hidden md:inline-flex" />
           <Link
             href={ROUTES.login}
             className="hidden font-mono text-[12px] uppercase tracking-wider2 hover:text-signal md:inline-flex"
@@ -111,6 +113,13 @@ export const Navbar = (): ReactElement => {
             >
               {user ? `↳ signed in as ${user.name}` : "↳ sign in"}
             </Link>
+
+            <div className="mt-8 flex flex-col gap-3">
+              <span className="font-mono text-[10px] uppercase tracking-wider2 text-muted">
+                ↳ display mode · pwr
+              </span>
+              <ThemeToggle expanded />
+            </div>
           </nav>
         </div>
       ) : null}

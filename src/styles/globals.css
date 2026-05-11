@@ -3,50 +3,79 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-bone: #f2ede3;
-    --color-ink: #111111;
-    --color-signal: #ff3d00;
-    --color-muted: #6b6a63;
-    --hairline: rgba(17, 17, 17, 0.12);
+  :root,
+  [data-theme="light"] {
+    --bone: 242 237 227;
+    --bone-2: 234 227 212;
+    --ink: 17 17 17;
+    --ink-2: 28 27 24;
+    --muted: 107 106 99;
+    --hairline-rgb: 17 17 17;
+    --hairline-alpha: 0.12;
+    --card-from: #eee7d8;
+    --card-to: #e8e0cf;
+    --card-overlay: rgba(17, 17, 17, 0.04);
+    --grain-blend: multiply;
+    --grain-opacity: 0.045;
+    --grain-invert: 0;
+    color-scheme: light;
+  }
+
+  [data-theme="dark"] {
+    --bone: 14 13 10;
+    --bone-2: 26 24 21;
+    --ink: 242 237 227;
+    --ink-2: 232 226 210;
+    --muted: 138 134 123;
+    --hairline-rgb: 242 237 227;
+    --hairline-alpha: 0.14;
+    --card-from: #1c1a16;
+    --card-to: #141210;
+    --card-overlay: rgba(242, 237, 227, 0.04);
+    --grain-blend: screen;
+    --grain-opacity: 0.05;
+    --grain-invert: 1;
+    color-scheme: dark;
   }
 
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    background-color: var(--color-bone);
-    color: var(--color-ink);
+    background-color: rgb(var(--bone));
+    color: rgb(var(--ink));
   }
 
   body {
-    background-color: var(--color-bone);
-    color: var(--color-ink);
+    background-color: rgb(var(--bone));
+    color: rgb(var(--ink));
     font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
     font-feature-settings: "ss01", "cv11";
     overflow-x: hidden;
+    transition: background-color 220ms ease, color 220ms ease;
   }
 
   ::selection {
-    background: var(--color-ink);
-    color: var(--color-bone);
+    background: rgb(var(--ink));
+    color: rgb(var(--bone));
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-signal);
+    outline: 2px solid #ff3d00;
     outline-offset: 3px;
     border-radius: 2px;
   }
 
-  /* paper-like noise/grain — subtle texture across the whole site */
+  /* paper-like grain — theme-aware via CSS variables */
   body::before {
     content: "";
     pointer-events: none;
     position: fixed;
     inset: 0;
     z-index: 200;
-    opacity: 0.045;
-    mix-blend-mode: multiply;
+    opacity: var(--grain-opacity);
+    mix-blend-mode: var(--grain-blend);
+    filter: invert(var(--grain-invert));
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 }
@@ -61,13 +90,13 @@
   }
 
   .hairline {
-    background-color: var(--hairline);
+    background-color: rgb(var(--hairline-rgb) / var(--hairline-alpha));
   }
 
   .rule-h {
     height: 1px;
     width: 100%;
-    background-color: var(--hairline);
+    background-color: rgb(var(--hairline-rgb) / var(--hairline-alpha));
   }
 
   .display-italic {
@@ -111,8 +140,9 @@
 
   .card-art {
     background:
-      radial-gradient(120% 100% at 50% 0%, rgba(17, 17, 17, 0.04) 0%, transparent 60%),
-      linear-gradient(180deg, #eee7d8 0%, #e8e0cf 100%);
+      radial-gradient(120% 100% at 50% 0%, var(--card-overlay) 0%, transparent 60%),
+      linear-gradient(180deg, var(--card-from) 0%, var(--card-to) 100%);
+    transition: background 220ms ease;
   }
 }
 
@@ -127,6 +157,6 @@
     scrollbar-width: thin;
   }
   .border-hairline {
-    border-color: rgba(17, 17, 17, 0.12);
+    border-color: rgb(var(--hairline-rgb) / var(--hairline-alpha));
   }
 }

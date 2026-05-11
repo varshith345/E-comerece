@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { Providers } from "@/context/Providers";
 import { SITE } from "@/constants/site";
+import { ThemeScript } from "@/app/theme-script";
 import "@/styles/globals.css";
 
 const display = Instrument_Serif({
@@ -89,8 +90,12 @@ interface RootLayoutProps {
 const RootLayout = ({ children }: RootLayoutProps): JSX.Element => (
   <html
     lang="en"
+    suppressHydrationWarning
     className={`${display.variable} ${sans.variable} ${mono.variable}`}
   >
+    <head>
+      <ThemeScript />
+    </head>
     <body className="min-h-screen bg-bone text-ink antialiased">
       <Providers>
         <a
